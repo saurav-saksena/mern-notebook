@@ -31,7 +31,7 @@ export default function Navbar() {
                             <li className="nav-item">
                                 <Link className={`nav-link ${location.pathname === "/about" ? "active" : ""}`} to="/about">About</Link>
                             </li>
-                            {auth && <li className='nav-item'>
+                            {auth && <li className='nav-item' title={`availabe notes ${notes.length}`}>
                                 <button type="button" className="btn btn-dark">
                                     Notes : <span className="badge text-bg-danger">{notes.length}</span>
                                 </button>
