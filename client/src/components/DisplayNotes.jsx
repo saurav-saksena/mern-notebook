@@ -21,7 +21,7 @@ export default function DisplayNotes(props) {
 
                 <p className='display--description'>{noteItem.description}</p>
             </div>
-            <p className='display--time'>Created at : {new Date(noteItem.date).toLocaleDateString()}</p>
+            <p className='display--time'>Created at : {new Date(noteItem.date).toLocaleDateString() + " || " + new Date(noteItem.date).getHours() + " : " + new Date(noteItem.date).getMinutes()}</p>
             <div className='icon--container d-flex justify-content-between'>
 
                 <i
